@@ -42,12 +42,14 @@ export default function AboutMe() {
       <div className="w-full lg:w-2/3 mt-8 lg:mt-0 lg:pl-10 text-center lg:text-left">
         <h2 className="text-3xl sm:text-4xl font-bold">About Me</h2>
         <p className="text-gray-300 mt-4 text-base sm:text-lg leading-relaxed">
-          I'm a passionate software developer with expertise in React Native,
-          Next.js, and Django. I specialize in building dynamic mobile and web
-          applications with seamless user experiences. With a strong foundation
-          in JavaScript, Python, and GraphQL, I develop scalable and efficient
-          solutions. My focus is on creating high-performance applications while
-          ensuring clean and maintainable code.
+          Full Stack Developer with 3+ years of experience in building
+          high-performance web and mobile applications. Proficient in
+          JavaScript, Python, React, React Native, Express.js, Django,
+          PostgreSQL, and real-time data handling with Socket.IO. Extensive
+          experience in GraphQL API development, improving app performance by
+          30% and reducing development time by 20% through optimized coding and
+          collaboration. A skilled problem-solver focused on delivering quality
+          projects on time.
         </p>
 
         {/* Tabs */}
