@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+
 const tabs = ["Skills", "Experience", "Education"];
 
 const content = {
@@ -16,7 +17,7 @@ const content = {
   Education: [
     {
       title: "Computer Science",
-      description: "BS CS   from Comsats University Islamabad",
+      description: "BS CS from Comsats University Islamabad",
     },
   ],
 };
@@ -25,36 +26,36 @@ export default function AboutMe() {
   const [activeTab, setActiveTab] = useState("Skills");
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black text-white p-10">
-      {/* Image (30% Width) */}
-      <div className="w-full md:w-1/3 flex justify-center">
-        <div className="relative w-full max-w-sm bg-gray-900 rounded-xl overflow-hidden shadow-lg">
+    <div className="flex flex-col lg:flex-row items-center justify-center min-h-screen bg-black text-white px-6 lg:px-20 py-10">
+      {/* Image Section */}
+      <div className="w-full lg:w-1/3 flex justify-center">
+        <div className="relative w-48 sm:w-64 lg:w-80 bg-gray-900 rounded-xl overflow-hidden shadow-lg">
           <img
             src="/Shayan.jpg"
             alt="Profile Picture"
-            className="w-full h-auto"
+            className="w-full h-auto object-cover"
           />
         </div>
       </div>
 
-      {/* Content (70% Width) */}
-      <div className="w-full md:w-2/3 mt-8 md:mt-0 md:pl-10">
-        <h2 className="text-4xl font-bold">About Me</h2>
-        <p className="text-[#fff] mt-3 text-lg">
+      {/* Content Section */}
+      <div className="w-full lg:w-2/3 mt-8 lg:mt-0 lg:pl-10 text-center lg:text-left">
+        <h2 className="text-3xl sm:text-4xl font-bold">About Me</h2>
+        <p className="text-gray-300 mt-4 text-base sm:text-lg leading-relaxed">
           I'm a passionate software developer with expertise in React Native,
           Next.js, and Django. I specialize in building dynamic mobile and web
           applications with seamless user experiences. With a strong foundation
           in JavaScript, Python, and GraphQL, I develop scalable and efficient
           solutions. My focus is on creating high-performance applications while
-          ensuring clean and maintainable code
+          ensuring clean and maintainable code.
         </p>
 
         {/* Tabs */}
-        <div className="flex space-x-8 mt-6 border-b border-gray-700">
+        <div className="flex justify-center lg:justify-start space-x-6 sm:space-x-12 mt-6 border-b border-gray-700 pb-2">
           {tabs.map((tab) => (
             <button
               key={tab}
-              className={`relative pb-2 font-medium transition-all ${
+              className={`relative text-sm sm:text-base font-medium transition-all ${
                 activeTab === tab ? "text-white" : "text-gray-500"
               }`}
               onClick={() => setActiveTab(tab)}
@@ -71,8 +72,12 @@ export default function AboutMe() {
         <div className="mt-6">
           {content[activeTab].map((item, index) => (
             <div key={index} className="mb-4">
-              <h4 className="text-[#ff004f] font-semibold">{item.title}</h4>
-              <p className="text-gray-300 text-2xl">{item.description}</p>
+              <h4 className="text-[#ff004f] font-semibold text-lg sm:text-xl">
+                {item.title}
+              </h4>
+              <p className="text-gray-400 text-base sm:text-lg">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
@@ -80,36 +85,3 @@ export default function AboutMe() {
     </div>
   );
 }
-
-// import React from "react";
-// export default function AboutMe() {
-//   return (
-//     <section className="px-30 bg-black text-white py-16 px-8 flex flex-col md:flex-row items-center">
-//       {/* Left Section - Text Content */}
-//       <div className="md:w-1/2 space-y-6">
-//         <h3 className="text-[#55e6a5] text-2xl uppercase">About Me</h3>
-//         <h2 className="text-4xl font-bold">
-//           Transforming visions into exceptional portfolios
-//         </h2>
-//         <p className="text-gray-400">
-//           I am a software developer with 3+ years of experience, specializing in
-//           React Native, Next.js, GraphQL, and backend APIs. I build modern,
-//           scalable applications for web and mobile platforms.
-//         </p>
-//         <button className="bg-green-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-500">
-//           Download CV ↓
-//         </button>
-//       </div>
-
-//       {/* Right Section - Image */}
-//       <div className="md:w-1/2 flex relative mt-10 md:mt-0 justify-end">
-//         <div className="w-60 h-60 bg-green-400 rounded-lg "></div>
-//         <img
-//           src="/Shayan.jpg"
-//           alt="Profile"
-//           className="absolute top-5 right-5 w-60 h-60 bg-green-400 rounded-lg"
-//         />
-//       </div>
-//     </section>
-//   );
-// }

@@ -38,7 +38,9 @@ export default function Portfolio() {
   return (
     <section className="text-white py-16 px-30">
       <div className="container mx-auto px-4">
-        <h4 className="text-[#fff] text-5xl font-bold capitalize">My work</h4>
+        <h4 className="text-[#fff] text-5xl font-bold capitalize text-center md:text-left">
+          My work
+        </h4>
         {/* <h2 className="text-2xl md:text-3xl  mt-2">
           Elevate your brand to new <br /> heights with our expertise
         </h2> */}

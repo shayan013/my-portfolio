@@ -3,34 +3,35 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="hero px-30 flex items-center justify-between">
-      {/* left side text */}
-      <div className="w-2/4">
-        <h1 className="text-7xl mb-1 uppercase font-bold">hi i'am shayan</h1>
+    <div className="hero px-5 md:px-30 flex flex-col-reverse md:flex-row items-center justify-between">
+      {/* Left Side - Text */}
+      <div className="w-full md:w-2/4 text-center md:text-left">
+        <h1 className="text-4xl md:text-7xl mb-1 uppercase font-bold">
+          Hi, I'm Shayan
+        </h1>
         <motion.h1
           animate={{ opacity: 1, y: [0, -20, 0] }} // Moves up and down
-          transition={{ duration: 1, repeat: 3, repeatType: "reverse" }} // 3 cycles of bounce
-          className="text-7xl mb-8 uppercase font-bold text-[#ff004f]"
+          transition={{ duration: 1, repeat: 3, repeatType: "reverse" }}
+          className="text-4xl md:text-7xl mb-8 uppercase font-bold text-[#ff004f]"
         >
-          software developer
+          Software Developer
         </motion.h1>
 
-        <p className="text-xl font-bold mb-5">
+        <p className="text-lg md:text-xl font-bold mb-5 px-2 md:px-0">
           I'm a passionate UI/UX designer with a mission to create delightful
           and intuitive digital experiences. With a strong foundation in design
-          principles and a keen eye for detail, I specialize in translating
-          complex ideas into user-friendly interfaces that captivate and engage.
+          principles, I specialize in crafting user-friendly interfaces.
         </p>
         <div>
-          <button className="px-3 py-4 bg-[#ff004f] text-lg capitalize rounded-md">
-            download my cv
+          <button className="px-4 py-3 bg-[#ff004f] text-lg capitalize rounded-md">
+            Download My CV
           </button>
-          <div></div>
         </div>
       </div>
-      {/* right side image */}
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="relative w-100 h-100">
+
+      {/* Right Side - Image */}
+      <div className="flex items-center justify-center h-auto md:min-h-screen w-full md:w-auto">
+        <div className="relative w-60 h-60 md:w-96 md:h-96">
           {/* Hexagon Border */}
           <div className="absolute inset-0">
             <svg
@@ -49,7 +50,7 @@ const Hero = () => {
 
           {/* Hexagonal Image Mask */}
           <div
-            className="absolute inset-10 bg-cover bg-center"
+            className="absolute inset-2 bg-cover bg-center"
             style={{
               backgroundImage: "url('/Shayan.jpg')",
               clipPath:
