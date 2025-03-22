@@ -23,7 +23,10 @@ const Hero = () => {
           principles, I specialize in crafting user-friendly interfaces.
         </p>
         <div>
-          <button className="px-4 py-3 bg-[#ff004f] text-lg capitalize rounded-md">
+          <button
+            onClick={() => window.open("/ShayanAkhtarResume.pdf", "_blank")}
+            className="px-4 py-3 bg-[#ff004f] text-lg capitalize rounded-md"
+          >
             Download My CV
           </button>
         </div>
