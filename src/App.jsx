@@ -15,7 +15,6 @@ function App() {
 
   // Scroll function
   const scrollToSection = (ref) => {
-    console.log("hello");
     ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
   return (

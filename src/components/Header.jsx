@@ -52,22 +52,34 @@ export default function Header({ handleScroll, refs }) {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="absolute top-16 right-4 bg-[#101820] p-5 rounded-lg md:hidden">
-          <a href="#" className="block text-white mb-2 hover:text-gray-400">
-            HOME
-          </a>
-          <a href="#" className="block text-white mb-2 hover:text-gray-400">
+          <a className="block text-white mb-2 hover:text-gray-400">HOME</a>
+          <a
+            onClick={() => handleScroll(refs.aboutMeRef)}
+            href="#"
+            className="block text-white mb-2 hover:text-gray-400"
+          >
             ABOUT
           </a>
-          <a href="#" className="block text-white mb-2 hover:text-gray-400">
+          <a
+            onClick={() => handleScroll(refs.servicesRef)}
+            href="#"
+            className="block text-white mb-2 hover:text-gray-400"
+          >
             SERVICES
           </a>
-          <a href="#" className="block text-white mb-2 hover:text-gray-400">
+          <a
+            onClick={() => handleScroll(refs.portfolioRef)}
+            href="#"
+            className="block text-white mb-2 hover:text-gray-400"
+          >
             PROJECTS
           </a>
-          <a href="#" className="block text-white mb-2 hover:text-gray-400">
-            BLOG
-          </a>
-          <a href="#" className="block text-white hover:text-gray-400">
+
+          <a
+            onClick={() => handleScroll(refs.contactMeRef)}
+            href="#"
+            className="block text-white hover:text-gray-400"
+          >
             CONTACT
           </a>
         </div>
