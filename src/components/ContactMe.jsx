@@ -15,7 +15,7 @@ const ContactMe = () => {
               📞 0349-9617096
             </p>
             {/* Social Icons */}
-            <div className="flex justify-center md:justify-start gap-4 mt-3">
+            {/* <div className="flex justify-center md:justify-start gap-4 mt-3">
               <a href="#" className="text-gray-400 hover:text-white text-2xl">
                 🌐
               </a>
@@ -28,11 +28,11 @@ const ContactMe = () => {
               <a href="#" className="text-gray-400 hover:text-white text-2xl">
                 🔗
               </a>
-            </div>
+            </div> */}
           </div>
-          <button className="bg-[#ff004f] text-white py-3 px-6 rounded-md text-xl transition-transform transform hover:scale-105">
+          {/* <button className="bg-[#ff004f] text-white py-3 px-6 rounded-md text-xl transition-transform transform hover:scale-105">
             Download CV
-          </button>
+          </button> */}
         </div>
 
         {/* Right Side - Contact Form */}
