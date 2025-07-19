@@ -5,19 +5,46 @@ const tabs = ["Skills", "Experience", "Education"];
 
 const content = {
   Skills: [
-    { title: "UI/UX", description: "Designing Web/App interfaces" },
-    { title: "Web Development", description: "Web app Development" },
-    { title: "App Development", description: "Building Android/iOS apps" },
+    {
+      title: "React Native",
+      description: "Cross-platform mobile app development",
+    },
+    {
+      title: "React & Next.js",
+      description: "Modern web interfaces and SSR apps",
+    },
+    {
+      title: "GraphQL & REST APIs",
+      description: "Backend integration and data handling",
+    },
+    {
+      title: "Node.js & Express",
+      description: "Building scalable server-side apps",
+    },
+    {
+      title: "MongoDB & SQL",
+      description: "Efficient database design and management",
+    },
+    { title: "UI/UX", description: "Clean and user-friendly designs" },
   ],
   Experience: [
-    { title: "Fullstack Developer", description: "Worked at Doerz tech" },
-    { title: "Front end Developer", description: "Worked at Codistan" },
-    { title: "Freelancer", description: "Developed multiple projects" },
+    {
+      title: "Fullstack Developer",
+      description: "Currently at Doerz Tech – Mobile & Web apps",
+    },
+    {
+      title: "Frontend Developer",
+      description: "Previously at Codistan – Built React-based interfaces",
+    },
+    {
+      title: "Freelancer",
+      description: "Delivered cross-platform apps for diverse clients",
+    },
   ],
   Education: [
     {
-      title: "Computer Science",
-      description: "BS CS from Comsats University Islamabad",
+      title: "Bachelor in Computer Science",
+      description: "Comsats University Islamabad",
     },
   ],
 };

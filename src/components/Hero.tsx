@@ -18,9 +18,11 @@ const Hero = () => {
         </motion.h1>
 
         <p className="text-lg md:text-xl font-bold mb-5 px-2 md:px-0">
-          I'm a passionate UI/UX designer with a mission to create delightful
-          and intuitive digital experiences. With a strong foundation in design
-          principles, I specialize in crafting user-friendly interfaces.
+          Full-Stack Developer with 3+ Years of Experience Building Scalable Web
+          & Mobile Apps. Let’s turn your ideas into real-world products
+        </p>
+        <p className="text-lg md:text-xl  mb-5 px-2 md:px-0">
+          Let’s turn your ideas into real-world products
         </p>
         <div>
           <button
