@@ -54,6 +54,7 @@ export default function Portfolio() {
       name: "United Market",
       description:
         "United Market is a music platform for artists, managers, producers, labels, and A&Rs to showcase and manage talent. Users can create role-based profiles and upload music, like SoundCloud. Currently building the authentication and onboarding flow",
+
       url: "https://united-market.vercel.app/",
     },
   ];
